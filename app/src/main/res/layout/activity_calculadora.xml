@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculadoraActivity">
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculadora_itbi"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="22sp"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_header"/>
+
+    <TextView
+        android:id="@+id/tabela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerText"
+        android:text="1 - Belo Horizonte \n2 - Contagem \n3 - Nova Lima"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="16sp"
+        android:textColor="@color/primary_purple"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/codigoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/c_digo_da_cidade"
+        android:layout_below="@+id/tabela"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/codigoInput"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/codigoText"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_medium"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/valorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valor_do_im_vel"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/codigoInput"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/valorInput"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valorText"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_button"
+        android:text="@string/calcular"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/valorInput"
+        android:layout_marginTop="50dp"/>
+
+
+</RelativeLayout>

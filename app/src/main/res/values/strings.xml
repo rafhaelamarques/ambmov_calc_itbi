@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CalculadoraITBI</string>
+    <string name="valor_do_im_vel">Valor do Imóvel</string>
+    <string name="c_digo_da_cidade">Código da Cidade</string>
+    <string name="calculadora_itbi">Calculadora ITBI</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado">Resultado</string>
+</resources>

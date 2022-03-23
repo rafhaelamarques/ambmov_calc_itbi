@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultadoActivity">
+
+    <TextView
+        android:id="@+id/headerTextResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="22sp"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_header"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/resultadoRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/headerTextResult"
+        android:layout_margin="60dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ITBI"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/resultadoOutput"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/exceptionOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultadoRow"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="50dp"
+        android:textAlignment="center"
+        android:textColor="@color/primary_red" />
+
+</RelativeLayout>
